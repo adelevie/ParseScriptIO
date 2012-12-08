@@ -1,7 +1,7 @@
 parse = {}
 
 parse.client = {}
-function parse.client.new(keys)
+function parse.client.new (keys)
   local self = {
     application_id = keys.application_id,
     rest_api_key = keys.rest_api_key,
@@ -9,9 +9,8 @@ function parse.client.new(keys)
     host = 'https://api.parse.com'
   }
 
-  function self:base_uri()
-    --self.host + "/" + self.version
-    "foo"
+  function self:base_uri ()
+    return "foo"
   end
 end
 
