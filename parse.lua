@@ -10,7 +10,8 @@ function parse.client.new(keys)
   }
 
   function self:base_uri()
-    self.host + "/" + self.version
+    --self.host + "/" + self.version
+    "foo"
   end
 end
 
