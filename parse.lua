@@ -1,5 +1,7 @@
-local parse = {
-  foo = 'bar'
-}
+local Parse = {}
 
-return parse
+function Parse.init
+  print "init!"
+end
+
+return Parse
