@@ -1,6 +1,6 @@
 local Parse = {}
 
-function Parse.init
+function Parse.init()
   print "init!"
 end
 
