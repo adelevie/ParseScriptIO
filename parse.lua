@@ -1,4 +1,4 @@
-parse = {
+local parse = {
   foo = 'bar'
 }
 
