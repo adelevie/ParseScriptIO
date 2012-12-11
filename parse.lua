@@ -39,7 +39,11 @@ function parse.client:get(path, params)
   return http.request {
     method = "GET",
     url = parse.protocol:base_uri() .. path,
-    params = params
+    params = params,
+    headers = {
+      ["X-Parse-Application-Id"] = parse.client.application_id,
+      ["X-Parse-REST-API-Key"] = parse.client.rest_api_key
+    }
   }
 end
 
