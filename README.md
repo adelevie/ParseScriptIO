@@ -8,7 +8,7 @@ Aiming for something like this:
 ```lua
 parse = require('parse')
 
-parse.init{
+parse:init{
   application_id = "122",
   rest_api_key = "abcd"
 }
@@ -21,6 +21,6 @@ post.save
 
 query = Parse.query:new("Post")
 query.eq("author", "Alan deLevie")
-results = query.get
+results = query.find
 print(results[0].get_attribute("body"))
 ```
